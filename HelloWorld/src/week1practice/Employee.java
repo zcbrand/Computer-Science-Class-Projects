@@ -5,22 +5,22 @@
  */
 package week1practice;
 
-public class Employee extends Person {
+import java.text.DecimalFormat;
 
-    private int salary;
+abstract class Employee extends Person {
 
-    public Employee(String firstName, String lastName, int salary) {
+    protected static DecimalFormat formatter = new DecimalFormat("$0.00");
+
+    public Employee(String firstName, String lastName) {
         super(firstName, lastName);
-        this.salary = salary;
-
     }
+
+    public abstract void issueRaise(double percentage);
+
+    public abstract double calculateEarnings();
 
     public String toString() {
-        return super.toString() + "\n\tSalary: " + salary;
+        return super.toString() + "\n\tEarnings: "
+                + formatter.format(calculateEarnings());
     }
-
-    public void display() {
-        System.out.println("<<Employee>>" + this);
-    }
-
 }
