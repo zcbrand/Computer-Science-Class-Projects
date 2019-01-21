@@ -1,8 +1,6 @@
 //Person.java
 package week1practice;
 
-import week1practice.Name;
-
 public class Person {
 
     //Static vatiables for counting person instances
