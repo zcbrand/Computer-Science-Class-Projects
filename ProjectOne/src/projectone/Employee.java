@@ -1,33 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* Filename: Employee.jave
+ * Author: Zachary Brandenburg
+ * Date: 23 January 2019
+ * Purpose:
  */
 package projectone;
 
-/**
- *
- * @author zcbra
- */
 public class Employee {
+
     private Name name;
     private double monthlySalary;
-    
-    public Employee(){
+
+    public Employee() {
         name = new Name("John", "Doe");
-        monthlySalary = 4000;
+        monthlySalary = 4_000;
     }
-    
-    public Employee(Name name, double monthlySalary){
+
+    public Employee(Name name, double monthlySalary) {
         this.name = name;
         this.monthlySalary = monthlySalary;
     }
-    
-    public String toString(){
+
+    public double annualSalary() {
+        return monthlySalary * 12;
+    }
+
+    public String toString() {
         return name + "\n\tMonthly Salary: " + monthlySalary;
     }
-    
-    public void display(){
-        System.out.print("<<Employee>>" + this);
-    }
-} 
+}
