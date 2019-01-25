@@ -9,6 +9,8 @@ public class Employee {
     // Declare class variables 
     private Name name;
     private double monthlySalary;
+    // Protected formatter for formatting dollar amounts
+    protected static DecimalFormat formatter = new DecimalFormat("$0.00");
     
     // Default employee constructor
     public Employee() {
@@ -31,7 +33,7 @@ public class Employee {
     
     // To string method
     public String toString() {
-        return name + "\n\tMonthly Salary: " + monthlySalary;
+        return name + "\n\tMonthly Salary: " + formatter(monthlySalary);
     }
     
     public void display() {
