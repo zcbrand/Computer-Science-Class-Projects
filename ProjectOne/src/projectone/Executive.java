@@ -21,6 +21,6 @@ public class Executive extends Employee{
     }
     
     public void display() {
-        System.out.print("<<Executive>>" + this + "\n\tStock Price: " + stockPrice);
+        System.out.print("<<Executive>>" + this + "\n\tStock Price: " + formatter(stockPrice));
     }
 }
