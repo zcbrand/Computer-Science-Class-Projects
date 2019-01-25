@@ -19,4 +19,8 @@ public class Executive extends Employee{
         return (stockPrice > STOCK_TARGET) ? super.annualSalary() + BONUS : 
                 super.annualSalary();
     }
+    
+    public void display() {
+        System.out.print("<<Executive>>" + this + "\n\tStock Price: " + stockPrice);
+    }
 }
