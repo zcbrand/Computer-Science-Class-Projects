@@ -1,4 +1,8 @@
-//Name.java
+/* Filename: Name.java
+ * Author: Zachary Brandenburg
+ * Date: 15 January 2019
+ * Purpose:
+ */
 package projectone;
 
 public class Name {

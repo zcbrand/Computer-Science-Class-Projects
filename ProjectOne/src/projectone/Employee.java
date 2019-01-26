@@ -1,9 +1,11 @@
-/* Filename: Employee.jave
+/* Filename: Employee.java
  * Author: Zachary Brandenburg
  * Date: 23 January 2019
  * Purpose:
  */
 package projectone;
+
+import java.text.DecimalFormat;
 
 public class Employee {
     // Declare class variables 
@@ -14,8 +16,8 @@ public class Employee {
     
     // Default employee constructor
     public Employee() {
-        name = new Name("John", "Doe");
-        monthlySalary = 4_000;
+        name = new Name(" ", " ");
+        monthlySalary = 0;
     }
     
     /* Employee constructor acceptinf a Name calss and double consisting of a 
@@ -33,7 +35,7 @@ public class Employee {
     
     // To string method
     public String toString() {
-        return name + "\n\tMonthly Salary: " + formatter(monthlySalary);
+        return name + "\n\tMonthly Salary: " + formatter.format(monthlySalary);
     }
     
     public void display() {

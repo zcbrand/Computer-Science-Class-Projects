@@ -1,7 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* Filename: Eecutive.java
+ * Author: Zachary Brandenburg
+ * Date: 23 January 2019
+ * Purpose:
  */
 package projectone;
 
@@ -20,7 +20,13 @@ public class Executive extends Employee{
                 super.annualSalary();
     }
     
+    public String toString() {
+        return super.toString() + "\n\tStock Price: " + 
+                formatter.format(stockPrice) + "\n\tAnnual Salary: " +
+                formatter.format(annualSalary());
+    }
+    
     public void display() {
-        System.out.print("<<Executive>>" + this + "\n\tStock Price: " + formatter(stockPrice));
+        System.out.print("<<Executive>>" + this);
     }
 }
