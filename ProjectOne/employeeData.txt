@@ -1,0 +1,20 @@
+2014 Employee Wonderland,Allison 2000	
+2015 Salesman Aaron,Hank 3000 100000
+2014 Executive Bush,George 5000 55
+2015 Employee Abbey,Edward 1500	
+2014 Salesman Ace,Jane 10000 4000000
+2015 Executive Trump,Donald 23000 21.32
+2014 Employee Ramirez,Manny 1000	
+2015 Salesman Rand,Ayn 1000 404091874
+2014 Executive Rometty,Ginni 10000 123.54
+2015 Employee Stein,Ben 1132	
+2014 Salesman Stalin,Joseph 0 54000000
+2015 Executive Gates,Bill 15000 -10
+2014 Employee Tagore,Rabindranath 1300	
+2015 Salesman Tennyson,Alfred 1800 200000000
+2014 Executive Nooyi,Indra 7050 132.5
+2015 Employee Thant,U 1357.45	
+2014 Salesman Watts,Alan 2345 123456789
+2015 Executive Bezos,Jeff 3000 1632.21
+2014 Employee Nijinsky,Vaslav 5376.34	
+2015 Salesman Morales,Evo 1467.74 9837482
