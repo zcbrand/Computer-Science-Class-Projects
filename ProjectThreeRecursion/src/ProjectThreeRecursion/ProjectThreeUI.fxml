@@ -23,11 +23,11 @@
 
     <Label text="Result:" GridPane.rowIndex="4"/>
 
-    <TextField fx:id="result"
+    <TextField fx:id="result" editable="false"
                GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
     <Label text="Efficiency:" GridPane.rowIndex="5"/>
 
-    <TextField fx:id="efficiency"
+    <TextField fx:id="efficiency" editable="false"
                GridPane.columnIndex="1" GridPane.rowIndex="5"/>
 </GridPane>

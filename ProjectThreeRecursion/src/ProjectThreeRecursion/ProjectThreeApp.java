@@ -1,3 +1,13 @@
+/* Filename: ProjectThreeApp.java
+ * Author: Zachary Brandenburg
+ * Date: 23 February 2019
+ * Purpose: This program calculates  the terms of the
+ * following sequence of numbers: 0 1 2 5 12 29 ... where each term of the sequence is twice
+ * the previous term plus the second previous term. The 0th term of the sequence is 0 and the
+ * 1st term of the sequence is 1. Once computed the the program displays the n term in the sequence and the method
+ * selected to compute the results efficiency.
+ */
+
 package ProjectThreeRecursion;
 
 import javafx.application.Application;
@@ -15,7 +25,11 @@ public class ProjectThreeApp extends Application {
         launch(args);
     }
 
+    /* Used when closing the program to calculate the efficiency of the iterative and recursive methods
+     * the write those results to a file
+     */
     public void efficiencyDataToFile() {
+        // Declare method variables
         int iterativeEfficiency;
         int recursiveEfficiency;
 
@@ -23,13 +37,20 @@ public class ProjectThreeApp extends Application {
             // Build file header
             outputData.append("N,Iterative,Recursive,\n");
 
+            /* loop from n = 0-10, e
+             * each iteration resets the efficiency then get efficiency data for
+             * n of both iterative and recursive methods and writes the results to a file
+             */
             for (int i = 0; i <= 10; i++) {
+
+                Sequence.resetEfficiency();
                 Sequence.computeIterative(i);
                 iterativeEfficiency = Sequence.getEfficiency();
                 Sequence.resetEfficiency();
                 Sequence.computeRecursive(i);
                 recursiveEfficiency = Sequence.getEfficiency();
-                Sequence.resetEfficiency();
+
+                // Write to file i,iterativeEfficiency,recursiveEfficiency then next line
                 outputData.append(String.valueOf(i))
                         .append(",")
                         .append(String.valueOf(iterativeEfficiency))

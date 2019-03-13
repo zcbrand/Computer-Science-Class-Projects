@@ -1,8 +1,16 @@
+/* Filename: Sequence.java
+ * Author: Zachary Brandenburg
+ * Date: 23 February 2019
+ * Purpose: Utility class to perform calculations within the application
+ */
+
 package ProjectThreeRecursion;
 
 public class Sequence {
+    // Declare variables
     private static int efficiency;
 
+    // Method to compute nth value in an iterative manner
     public static int computeIterative(int n) {
 
         if (n <= 2) {
@@ -24,7 +32,8 @@ public class Sequence {
         return b;
     }
 
-    public static int computeRecursive(int n) {
+    // Method to compute nth value in an recursive manner
+    public static int computeRecursive(int n) throws NumberFormatException {
 
         efficiency++;
 
@@ -35,7 +44,7 @@ public class Sequence {
     }
 
 
-    public static void resetEfficiency() {
+    public static void resetEfficiency() throws NumberFormatException {
         efficiency = 0;
     }
 

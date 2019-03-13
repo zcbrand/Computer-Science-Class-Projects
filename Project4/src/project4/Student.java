@@ -1,6 +1,10 @@
-package sample;
-
-import java.util.Formatter;
+/* Filename: Student.java
+ * Author: Zachary Brandenburg
+ * Date: 10 March 2019
+ * Purpose: contains variables for the student name, major, and
+ * credit hours and quality points that are used to compute the GPA
+ */
+package project4;
 
 public class Student {
 
@@ -9,6 +13,9 @@ public class Student {
     private int creditHours;
     private double qualityPoints;
 
+    /* Constructor that is used when new student records are created. It accepts the name
+     *  major as parameters and initializes the fields that are used to compute the GPA to zero.
+     */
     public Student(String studentName, String studentMajor) {
         this.studentName = studentName;
         this.studentMajor = studentMajor;
@@ -16,15 +23,20 @@ public class Student {
         qualityPoints = 0;
     }
 
+    /* Accepts the course grade and credit hours and updates the variables used to compute the GPA.
+     * It will be called when an Update request is made.
+     */
     public void courseCompleted(int creditHours, double qualityPoints) {
         this.creditHours += creditHours;
-        this.qualityPoints += qualityPoints;
+        this.qualityPoints += qualityPoints * creditHours;
     }
 
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Student Name : " + studentName
                 + "\nMajor: " + studentMajor
-                + "\nGPA: " + String.format("%.2f", (creditHours * qualityPoints));
+                + "\nGPA: " + ((creditHours > 0) ?
+                String.format("%.2f", qualityPoints / creditHours) : "4.0");
     }
 }
