@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<GridPane fx:controller="sample.MainController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <ComboBox fx:id="selectionComboBox" prefWidth="150.0" visibleRowCount="4" GridPane.columnIndex="1"
+              GridPane.rowIndex="3">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Insert"/>
+                <String fx:value="Delete"/>
+                <String fx:value="Find"/>
+                <String fx:value="Update"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <TextField fx:id="idTextField" GridPane.columnIndex="1"/>
+    <TextField fx:id="nameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <TextField fx:id="majorTextField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button contentDisplay="CENTER" onAction="#processRequestButton" text="Process Request" GridPane.rowIndex="4"/>
+    <Label text="Id:"/>
+    <Label text="Name:" GridPane.rowIndex="1"/>
+    <Label text="Major:" GridPane.rowIndex="2"/>
+    <Label text="Choose Selection:" GridPane.rowIndex="3"/>
+</GridPane>
