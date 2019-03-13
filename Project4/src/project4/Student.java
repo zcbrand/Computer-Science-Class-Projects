@@ -12,6 +12,7 @@ public class Student {
     private String studentMajor;
     private int creditHours;
     private double qualityPoints;
+    private double GPA = (creditHours > 0) ? (qualityPoints / creditHours) : "4.0";
 
     /* Constructor that is used when new student records are created. It accepts the name
      *  major as parameters and initializes the fields that are used to compute the GPA to zero.
@@ -36,7 +37,6 @@ public class Student {
     public String toString() {
         return "Student Name : " + studentName
                 + "\nMajor: " + studentMajor
-                + "\nGPA: " + ((creditHours > 0) ?
-                String.format("%.2f", qualityPoints / creditHours) : "4.0");
+                + "\nGPA: " + String.format("%.2f", GPA);
     }
 }
