@@ -14,7 +14,7 @@ import java.util.*;
 public class MainController {
     //Initialize lists to use in updateStudentRecord method
     private final List<Integer> CREDIT_VALUES = new ArrayList<>(Arrays.asList(3, 6));
-    private final List<String> GRADES = new ArrayList<>(Arrays.asList("A", "B", "C", "D", "E"));
+    private final List<String> GRADES = new ArrayList<>(Arrays.asList("A", "B", "C", "D", "F"));
 
     public ComboBox selectionComboBox;
     public TextField idTextField;
