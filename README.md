@@ -1,2 +1,2 @@
-# Intermediate Java
-Classwork for Intermediate Java
+# CS Cousework
+Class projects
